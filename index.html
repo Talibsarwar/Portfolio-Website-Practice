@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <script>
+    window.onload = function() {
+        document.querySelector('.Summary').style.transition = "transform 1s, opacity 1s";
+        document.querySelector('.Summary').style.transform = "translateX(0)";
+        document.querySelector('.Summary').style.opacity = "1";
+
+        document.querySelector('.Education').style.transition = "transform 1s, opacity 1s";
+        document.querySelector('.Education').style.transform = "translateX(0)";
+        document.querySelector('.Education').style.opacity = "1";
+    };
+
+    window.onscroll = function() {
+        const elements = [
+            {selector: '.Senior-SEO-Specialist'},
+            {selector: '.Chief-Editor-and-Owner'},
+            {selector: '.Search-Engine-Optimization-Executive'},
+            {selector: '.SEO-Expert'},
+            {selector: '.Senior-Content-Writer'},
+            {selector: '.Skills'},
+            {selector: '.Projects'},
+        ];
+
+        elements.forEach(el => {
+            const elem = document.querySelector(el.selector);
+            if (!elem) return;
+            const rect = elem.getBoundingClientRect();
+            if(rect.top < window.innerHeight - 50) {
+                elem.style.transition = "transform 1s, opacity 1s";
+                elem.style.transform = "translateX(0)";
+                elem.style.opacity = "1";
+            }
+        });
+    };
+    </script>
+</head>
+<body>
+    <img src="./1593780048433.jpeg" onmouseover="this.style.transform='translateY(-15px)'"
+onmouseout="this.style.transform='translateY(0)'" style="width: 300px; transition: transform 0.2s;"/>
+    <h2 style="font-size: 15px;"><a href="./Contact Us.html"><i>Contact Us</i></a></h2>
+    <div class="Summary" style="transform: translateX(-50px); opacity: 0;">
+    <h2>Summary</h2>
+    <p>As an SEO Expert, I develop and implement comprehensive SEO strategies to rank various projects at the top of search engines, such as Google, Bing, Yahoo, and DuckDuck Go. I perform all the necessary SEO tasks, including keyword research, product research, competitor analysis, website speed optimization, and web copy approval and uploading. I also manage off-page SEO activities, such as social profile creation, business listing, social bookmarking, directory submission, and guest posting. Some of the sites that I have successfully ranked in the US are Yellowstone Outfits and Money Heist Halloween.</p>
+    <p>I am also a BSCS student at the Virtual University of Pakistan, with a diploma in computer information technology from Jinnah Polytechnic Institute Karachi. I have a strong background in web development, using WordPress, HTML, CSS, and JavaScript. I have designed and developed several websites as a freelancer and as a web developer at Academics Writer and Prime Valley USA. In addition, I have a keen interest in web content creation and digital marketing, and I have obtained multiple certifications from DigiSkills.pk and Udemy in these fields. My goal is to leverage my skills and knowledge to create engaging and optimized web content that drives traffic and conversions for my clients.</p>
+    </div>
+    <div class="Education" style="transform: translateX(50px); opacity: 0;">
+    <h2>Education</h2>
+        <h3>Virtual University of Pakistan</h3>
+            <h4>BSCS, Computer Science</h4>
+                <h5>May 2021 - May 2027</h5>
+        <h3>Jinnah Polytechnic Institute Karachi</h3>
+            <h4>Associate's degree, Computer Information Technology</h4>
+                <h5>2018 - 2020</h5>
+        <p>Grade: B+</p>
+        <p>Activities and societies: Participated in workshop of arduino automation</p>
+    </div>
+    <div class="Work Experience">
+    <h2>Work Experience</h2>
+        <div class="Senior-SEO-Specialist" style="transform: translateX(-50px); opacity: 0;">
+        <h3>Senior SEO Specialist</h3>
+            <h4>Elite Solutions CPA · Full-time</h4>
+                <h5>Mar 2025 - Present · 5 mos</h5>
+                    <h6>Tariq Road, Karachi · On-site</h6>
+        <p><b>Skills Applied:</b> Google Ads, Google Tag Manager, On-Page SEO, Off-Page SEO, Guest Posting, Niche Edit, Backlinks</p>
+        </div>
+        <div class="Chief-Editor-and-Owner" style="transform: translateX(50px); opacity: 0;">
+        <h3>Chief Editor & Owner</h3>
+            <h4>cowgirlspromise.com · Self-employed</h4>
+                <h5>Mar 2024 - Present · 1 yr 5 mos</h5>
+        <p><b>Skills Applied:</b> Affiliate Marketing, Google Ads, Google Tag Manager, On-Page SEO, Off-Page SEO, Guest Posting, Niche Edit, Backlinks</p>
+        </div>
+        <div class="Search-Engine-Optimization-Executive" style="transform: translateX(-50px); opacity: 0;">
+        <h3>Search Engine Optimization Executive</h3>
+            <h4>Creatif Soft · Full-timeCreatif Soft · Full-time</h4>
+                <h5>Jun 2024 - Sep 2024 · 4 mos</h5>
+                    <h6>Karachi Division, Sindh, Pakistan · On-site</h6>
+        <p><b>Skills:</b> Search Engine Optimization (SEO) · Off-Page SEO · Web Content Optimization · Guest Posting</p>
+        </div>
+        <div class="SEO-Expert" style="transform: translateX(50px); opacity: 0;">
+        <h3>SEO Expert</h3>
+            <h4>Khan Digital Agency · Full-time</h4>
+                <h5>Apr 2022 - Jun 2024 · 2 yrs 3 mos</h5>
+                    <h6>Karāchi, Sindh, Pakistan</h6>
+        <p>Khan Digital Agency is a firm that offers Digital Services to various clients around the Globe. In this firm, my responsibilities include Developing a Comprehensive SEO Strategy to Rank the Projects at the Top of Search Engines (Google, Bing, Yahoo, DuckDuck Go). The SEO Strategy includes all the necessary SEO tasks such as Keyword Research, Product Research, Competitors Analysis, Website Speed Optimization, Approving, and Uploading Web Copies.</p>
+        <p>While my Off Page includes Social Profile Creation, Business Listing, Social Bookmarking, Directory Submission, Guest Posting, etc. Below are the sites that I ranked in the US by following this strategy:</p>
+        <ol>
+            <li><a href="https://yellowstoneoutfit.com/">Yellowstone Outfits</a></li>
+            <li><a href="https://moneyheistcostume.com/">Money Heist Halloween Costume</a></li>
+            <li><a href="https://harleyquinnmerch.com/">Harley Quinn Merchandise</a></li>
+            <li><a href="https://www.squidgamesapparels.com/">Squid Games Apparels</a></li>
+            <li><a href="https://www.thewesternoutfitters.com/">The Western Outfitters</a></li>
+            <li><a href="https://8balljacket.com/">Official 8 Ball Jacket Store</a></li>
+            <li><a href="https://yellowstonesclothing.com/">Yellowstone's Clothing</a></li>
+        </ol>
+        <p><b>Skills:</b> Cascading Style Sheets (CSS) · Link Building · WordPress · Web Traffic · SEMrush · Fashion Blogging · Search Engine Optimization (SEO) · Guest Posting · Presentation Skills · On-Page SEO · Negotiation · Keyword Research · Information Graphics · Niche Edit · Web Analytics · Google Tag Manager · Proofreading · Off-Page SEO · Relationship Development · Google Keyword Planner · HTML5 · Google Analytics · Ahrefs · On-Page Optimization · Content Management Systems (CMS) · Google Search Console · SEO Audits · Sales Presentations</p>
+        </div>
+        <div class="Senior-Content-Writer" style="transform: translateX(-50px); opacity: 0;">
+        <h3>Senior Content Writer</h3>
+            <h4>Prime Valley USA · Full-time</h4>
+                <h5>Jun 2021 - Jan 2022 · 8 mos</h5>
+                    <h6>Karachi, Sindh, Pakistan</h6>
+        <p>As a Senior Content Writer, I had to give keywords to my junior writers through competitors and keyword research. So that they could stuff the keywords in the content they have written. Once the content was ready I had to read it out and suggest changes if needed or upload it.</p>
+        <p>Furthermore, I was responsible to manage the articles uploaded on some of our client's websites and their internal links. These websites are given below:</p>
+        <ol>
+            <li>myusamart.com</li>
+            <li>projectorsrating.com</li>
+            <li>generatorspick.com</li>
+            <li>probioform.com</li>
+            <li>huskyempire.com</li>
+        </ol>
+        <p><b>Skills:</b> WordPress · Web Traffic · Keyword Research · Web Analytics · Proofreading · Affiliate Marketing · Google Analytics · Web Content Writing · Content Management Systems (CMS)</p>
+        </div>
+        <div class="Skills" style="transform: translateX(50px); opacity: 0;">
+            <h2>Skills</h2>
+                <ul style="display: inline-block;">
+                    <li>Google Ads</li>
+                    <li>Backlinks</li>
+                    <li>E-Commerce</li>
+                    <li>Google Tag Manager</li>
+                    <li>Affiliate Marketing</li>
+                    <li>Fashion Blogging</li>
+                    <li>Guest Posting</li>
+                    <li>Niche Edit</li>
+                    <li>Sales Presentations</li>
+                    <li>Web Traffic</li>
+                    <li>Web Analytics</li>
+                    <li>Technical SEO</li>
+                    <li>Link Building</li>
+                    <li>Digital Marketing</li>
+                    <li>Google Analytics</li>
+                    <li>Google Search Console</li>
+                    <li>Off-Page SEO</li>
+                    <li>Proofreading</li>
+                    <li>Content Management Systems (CMS)</li>
+                </ul>
+        </div>
+<h2 class="Projects" style="transform: translateX(-50px); opacity: 0;">Projects</h2>
+<img src="./Projects/Images/1690808253927.jpeg" style="width: 400px; height: auto;"/>
+    <h3>Academics Writer (Freelance Project)</h3>
+        <h4>Jul 2023 - PresentJul 2023 - Present</h4>
+            <h5>Start-up Project for Academic Services</h5>
+<p><a href="./Projects/Our Projects.html"><b><i>View More</i></b></a></p>
+</body>
+<footer><p>© 2025 Talib Sarwar</p></footer>
+</html>
